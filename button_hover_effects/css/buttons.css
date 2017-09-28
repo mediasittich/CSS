@@ -1,0 +1,122 @@
+body {
+  color: white;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  text-align: center;
+}
+h1 {
+  color: #666;
+}
+.button {
+  width: 200px;
+  height: 40px;
+  background-color: #424242;
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  transition: all .25s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 1px #666;
+}
+
+.color:hover {
+  background-color: #f4511e;
+}
+
+.wiggle:hover {
+  animation: wiggle 1s ease;
+  animation-iteration-count: 1;
+}
+@keyframes wiggle {
+  20% { transform: translateX(6px); }
+  40% { transform: translateX(-6px); }
+  60% { transform: translateX(3px); }
+  80% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+
+.jump:hover {
+  animation: jump 1s ease;
+  animation-iteration-count: 1;
+}
+@keyframes jump {
+  25% { transform: translateY(8px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(8px); }
+  100% { transform: translateY(0); }
+}
+
+.zoom:hover {
+  animation: zoom 1s ease;
+  animation-iteration-count: 1;
+}
+@keyframes zoom {
+  20% { transform: scale(1.2); }
+  40% { transform: scale(0.8); }
+  60% { transform: scale(1.1); }
+  80% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+.arrow > span {
+  position: relative;
+  transition: .25s;
+}
+.arrow:hover > span {
+  padding-right: 20px;
+}
+.arrow > span::after {
+  content: ' \00bb';
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+  transition: all .25s;
+}
+.arrow:hover > span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, .2);
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.ripple:hover::after {
+  animation: ripple 1.5s ease;
+}
+@keyframes ripple {
+  0% {
+    opacity: 1;
+    transform: scale(0, 0);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(2, 2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5, 5);
+  }
+}
