@@ -1,0 +1,130 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-header {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding: 5px 10px;
+}
+.card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.card-icon {
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card-purple {
+  border-color: #AF0D7C;
+}
+.card-purple .card-header {
+  color: #510639;
+  border-bottom-color: #AF0D7C;
+  background-color: #FDDEF3;
+}
+.card-purple .card-icon {
+  color: #510639;
+}
+.card-purple .card-description {
+  color: #510639;
+}
+
+.card-red {
+  border-color: #FE8176;
+}
+.card-red .card-header {
+  color: #A70F01;
+  border-bottom-color: #FE8176;
+  background-color: #FFDEDB;
+}
+.card-red .card-icon {
+  color: #A70F01;
+}
+.card-red .card-description {
+  color: #A70F01;
+}
+
+.card-orange {
+  border-color: #FDB768;
+}
+.card-orange .card-header {
+  color: #FB8804;
+  border-bottom-color: #FDB768;
+  background-color: #FEEEDC;
+}
+.card-orange .card-icon {
+  color: #FB8804;
+}
+.card-orange .card-description {
+  color: #FB8804;
+}
+
+.card-yellow {
+  border-color: #FEFE16;
+}
+.card-yellow .card-header {
+  color: #CBCB01;
+  border-bottom-color: #FEFE16;
+  background-color: #FEFE9A;
+}
+.card-yellow .card-icon {
+  color: #CBCB01;
+}
+.card-yellow .card-description {
+  color: #CBCB01;
+}
+
+.card-green {
+  border-color: #7FBD32;
+}
+.card-green .card-header {
+  color: #496D1D;
+  border-bottom-color: #7FBD32;
+  background-color: #B0DC7A;
+}
+.card-green .card-icon {
+  color: #496D1D;
+}
+.card-green .card-description {
+  color: #496D1D;
+}
+
+.card-blue {
+  border-color: #609CE1;
+}
+.card-blue .card-header {
+  color: #236AB9;
+  border-bottom-color: #609CE1;
+  background-color: #E1ECF9;
+}
+.card-blue .card-icon {
+  color: #236AB9;
+}
+.card-blue .card-description {
+  color: #236AB9;
+}

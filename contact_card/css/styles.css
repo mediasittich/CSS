@@ -1,0 +1,63 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+	text-align: center;
+	padding: 10px;
+}
+.card {
+	max-width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+	margin: 30px auto;
+	text-align: center;
+}
+img {
+	width: 350px;
+	height: auto;
+}
+.name {
+	font-weight: 700;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.job-title {
+	color: rgba(0, 0, 0, .5);
+	font-size: 18px;
+}
+.work-place {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.social {
+	padding-top: 10px: 
+	padding-bottom: 20px;
+
+	display: flex;
+	justify-content: center;
+}
+.social > a {
+	text-decoration: none;
+	color: #000;
+	font-size: 22px;
+	padding: 6px;
+}
+
+.btn {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	outline: none;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	padding: 10px;
+}
+.btn:hover {
+	opacity: .7;
+}
